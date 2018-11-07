@@ -7,3 +7,6 @@ task :console do
   ARGV.clear
   IRB.start
 end
+task :findj do
+  puts Artist.find_by(name: 'Jon')
+end
